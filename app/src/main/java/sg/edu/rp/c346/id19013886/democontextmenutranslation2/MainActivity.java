@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView tvTranslatedText;
+    TextView tvTranslatedText2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvTranslatedText = findViewById(R.id.textViewTranslatedText);
+        tvTranslatedText2 = findViewById(R.id.textViewTranslatedText2);
 
         registerForContextMenu(tvTranslatedText);
+        registerForContextMenu(tvTranslatedText2);
 
     }
 
@@ -40,9 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.EnglishSelection) {
             tvTranslatedText.setText("Hello ");
+            tvTranslatedText2.setText("Bye");
             return true;
         } else if (id == R.id.italianSelection) {
             tvTranslatedText.setText("Ciao");
+            tvTranslatedText2.setText("Addio");
             return true;
         } else {
             tvTranslatedText.setText("Error translation");
