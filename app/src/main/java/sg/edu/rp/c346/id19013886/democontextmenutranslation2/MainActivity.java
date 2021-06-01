@@ -30,15 +30,6 @@ public class MainActivity extends AppCompatActivity {
                                     ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
 
-//        if (v == tvTranslatedText) {
-//            wordClicked = "hello";
-//        } else if (v == tvTranslatedText2) {
-//            wordClicked = "bye";
-//        }
-//
-//        menu.add(0, 0, 0, "English");
-//        menu.add(0, 1, 1, "Italian");
-
         getMenuInflater().inflate(R.menu.menu_main, menu);
 
 
